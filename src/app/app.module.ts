@@ -8,9 +8,9 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
-import { AddUserComponent } from './adduser/adduser.component';
+import { AddStudentComponent } from './addstudent/addstudent.component';
 
-import { UserState } from './state/user.state';
+import { UserState } from './state/student.state';
 
 @NgModule({
   imports: [
@@ -23,7 +23,7 @@ import { UserState } from './state/user.state';
     NgxsLoggerPluginModule.forRoot(),
     ReactiveFormsModule
   ],
-  declarations: [AppComponent, HelloComponent, AddUserComponent],
+  declarations: [AppComponent, HelloComponent, AddStudentComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

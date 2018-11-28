@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Store, Select } from '@ngxs/store';
-import { User } from './models/User';
+import { Student } from './models/Student';
 import { Observable } from 'rxjs';
 
 @Component({
@@ -10,10 +10,10 @@ import { Observable } from 'rxjs';
 })
 export class AppComponent  {
   
-  users: Observable<User>;
+  students: Observable<Student>;
 
   constructor(private store: Store) {
-    this.users = this.store.select(state => state.users.users);
+    this.students = this.store.select(state => state.students.students);
    }
 
 }
