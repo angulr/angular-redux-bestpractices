@@ -12,8 +12,9 @@ import { AddStudentComponent } from './addstudent/addstudent.component';
 
 import { UserState } from './state/student.state';
 
-
 import { CoreModule } from './@core/core.module';
+import { StudentService } from './@Core/data/student.service';
+import { HttpClientModule } from '@angular/common/http'; 
 
 @NgModule({
   imports: [
@@ -25,9 +26,11 @@ import { CoreModule } from './@core/core.module';
     NgxsReduxDevtoolsPluginModule.forRoot(),
     NgxsLoggerPluginModule.forRoot(),
     ReactiveFormsModule,
+    HttpClientModule,
     CoreModule.forRoot()
   ],
   declarations: [AppComponent, HelloComponent, AddStudentComponent],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  providers: [StudentService]
 })
 export class AppModule { }

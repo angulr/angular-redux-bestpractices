@@ -3,7 +3,7 @@ import { Student } from '../../models/Student';
 import { AddStudent } from '../../actions/student.action';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { UserState, StudentStateModel } from '../student.state';
-import { PersonService } from '../../@Core/data/person.service';
+import { StudentService } from '../../@Core/data/student.service';
 
 
 
@@ -15,7 +15,7 @@ import { PersonService } from '../../@Core/data/person.service';
 })
 
 export class StudentServiceState extends UserState {
-    constructor(private customerService: PersonService, private store: Store) {
+    constructor(private studentService: StudentService, private store: Store) {
         super();
     }
 

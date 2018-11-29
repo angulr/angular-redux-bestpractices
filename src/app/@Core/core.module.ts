@@ -1,9 +1,9 @@
 import { ModuleWithProviders, NgModule, Optional, SkipSelf } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { PersonService } from './data/person.service'
+import { StudentService } from './data/student.service';
 import { throwIfAlreadyLoaded } from './module-import-guard';
 
-export const NB_CORE_PROVIDERS = [PersonService];
+export const NB_CORE_PROVIDERS = [StudentService];
 
 @NgModule({
   imports: [
