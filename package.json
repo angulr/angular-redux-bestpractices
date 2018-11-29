@@ -17,6 +17,7 @@
     "crypto": "^1.0.1",
     "express-session": "^1.15.6",
     "rxjs": "^6.3.3",
+    "rxjs-compat": "^6.3.3",
     "zone.js": "^0.8.26"
   },
   "scripts": {

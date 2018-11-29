@@ -12,6 +12,9 @@ import { AddStudentComponent } from './addstudent/addstudent.component';
 
 import { UserState } from './state/student.state';
 
+
+import { CoreModule } from './@core/core.module';
+
 @NgModule({
   imports: [
     BrowserModule,
@@ -21,7 +24,8 @@ import { UserState } from './state/student.state';
     ]),
     NgxsReduxDevtoolsPluginModule.forRoot(),
     NgxsLoggerPluginModule.forRoot(),
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    CoreModule.forRoot()
   ],
   declarations: [AppComponent, HelloComponent, AddStudentComponent],
   bootstrap: [AppComponent]
